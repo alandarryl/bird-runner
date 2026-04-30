@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Markdown
+# 🐦 Bird Runner - React Native Game
 
-## Get started
+Un jeu mobile dynamique développé avec **React Native** et **Expo**. Incarnez un oiseau, évitez les rochers et collectez de la nourriture pour obtenir le meilleur score possible !
 
-1. Install dependencies
+## 🚀 Fonctionnalités
+- **Gameplay Fluide** : Contrôles tactiles réactifs pour des mouvements horizontaux.
+- **Difficulté Progressive** : La vitesse du jeu augmente au fur et à mesure que votre score grimpe.
+- **Système de Score** : Enregistrement persistant du meilleur score (High Score) via `AsyncStorage`.
+- **Audio Immersif** : Effets sonores pour les collisions, la collecte d'objets et le Game Over.
+- **Graphismes Personnalisés** : Utilisation d'assets originaux pour les personnages, obstacles et décors.
 
+## 🛠️ Stack Technique
+- **Framework** : React Native (Expo SDK)
+- **Navigation** : Expo Router
+- **Gestion Audio** : Expo-AV
+- **Stockage** : AsyncStorage
+- **Langage** : JavaScript / React
+
+## 📦 Installation et Lancement
+
+1. **Cloner le projet**
    ```bash
-   npm install
-   ```
+   git clone [https://github.com/ton-pseudo/bird-runner.git](https://github.com/ton-pseudo/bird-runner.git)
+   cd bird-runner
+Installer les dépendances
 
-2. Start the app
+Bash
+npm install
+Lancer le projet
 
-   ```bash
-   npx expo start
-   ```
+Bash
+npx expo start
+🎮 Comment jouer ?
+Utilisez les boutons GAUCHE et DROITE pour déplacer l'oiseau.
 
-In the output, you'll find options to open the app in a
+Évitez les Rochers 🪨 (vous avez 3 vies).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Collectez le Blé 🌾 pour gagner des points bonus (+5).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Tenez le plus longtemps possible pour battre votre record !
 
-## Get a fresh project
+🖼️ Assets
+Les images et sons sont situés dans le dossier /src/assets.
 
-When you're ready, run:
+Oiseau : blue-bird.png
 
-```bash
-npm run reset-project
-```
+Décor : forest-level.png
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Sons : rock-hit.mp3, collect-coin.mp3, game-over.mp3
